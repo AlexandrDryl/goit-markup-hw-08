@@ -122,6 +122,8 @@ body {
 
 .features .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -178,9 +180,9 @@ body {
 
 /* Портфолио */
 
-/* Фильтры */
+/* Проекты */
 
-.filters .button {
+.projects .button {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -188,13 +190,11 @@ body {
   cursor: pointer;
 }
 
-.filters .button:hover,
-.filters .button:focus {
+.projects .button:hover,
+.projects .button:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-
-/* Проекты */
 
 .projects .title {
   color: var(--title-text-color);
