@@ -1,15 +1,14 @@
 /* основной цвет текста #757575; */
 /* цвет заголовков #212121; */
-/* основной цвет фона #E5E5E5; */
+/* основной цвет фона #FFFFFF; */
 /* вторичный цвет фона #2F303A; */
 /* акцент #2196F3;*/
-/* белый #FFFFFF; */
 /* черный #000000; */
 
 :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
-  --main-bg-color: #e5e5e5;
+  --main-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --accent-color: #2196f3;
 }
@@ -22,8 +21,38 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Логотипы */
@@ -85,16 +114,21 @@ body {
 
 .baner {
   background-color: var(--secondary-bg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .baner .title {
   color: #ffffff;
   font-weight: 900;
+  max-width: 696px;
+  font-style: normal;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 auto 30px;
 }
 
 .baner .button {
@@ -105,6 +139,10 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 /* Особенности */
@@ -126,6 +164,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features .text {
@@ -139,6 +178,15 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.works {
+  padding-top: 0;
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .team .name {
@@ -152,6 +200,8 @@ body {
 
 .footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts .map {
