@@ -13,22 +13,22 @@
 </head>
 <body>
     <!-- Верхняя линия -->
-    <header>
-        <div class="container">
+    <header class="main-header">
+        <div class="container header">
+            <a href="./index.html" class="logo-top">Web<span class="logo">Studio</span></a>
             <nav>
-                <a href="./index.html" class="logo-top">Web<span class="logo">Studio</span></a>
                 <ul class="nav list">
-                    <li><a href="./index.html" class="link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
             <!-- Контакты -->
             <ul class="contacts-top list">
-                <li>
+                <li class="item">
                     <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="tel:+380961111111" class="link">+38 096 111 11 11</a
                 ></li>
             </ul>
@@ -46,20 +46,20 @@
         <section class="features  section">
             <div class="container">
                 <h2 class="hidden">Особенности</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list features-list">
+                    <li class="features-item">
                         <h3 class="title">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3 class="title">Пунктуальность</h3>
                         <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3 class="title">Планирование</h3>
                         <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3 class="title">Современные технологии</h3>
                         <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -70,14 +70,14 @@
         <section class="works  section">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list works-list">
+                    <li class="works-item">
                         <img src="./images/img1.jpg" width="370" height="294" alt="программист работает за столом в офисе">
                     </li>
-                    <li>
+                    <li class="works-item">
                         <img src="./images/img2.jpg" width="370" height="294" alt="команда разработчиков работает над интерфейсом мобильных телефонов">
                     </li>
-                    <li>
+                    <li class="works-item">
                         <img src="./images/img3.jpg" width="370" height="294" alt="креативный художник веб-дизайна с рабочим графическим планшетом для выбора цвета">
                     </li>
                 </ul>
@@ -87,26 +87,58 @@
         <section class="team  section">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
-                <ul class="list">
-                    <li>
-                        <img src="./images/img21.jpg" width="270" height="260" alt="" />
-                        <h3 class="name">Игорь Демьяненко</h3>
-                        <p lang="en">Product Designer</p>
+                <ul class="list team-list">
+                    <li class="team-item">
+
+                        <article class="card">
+                            <div class="team-card-thumb">
+                                <img src="./images/img21.jpg" width="270" height="260" alt="" />
+                            </div>
+                            
+                            <div class="team-card-content">
+                                <h3 class="name">Игорь Демьяненко</h3>
+                                <p class="team-profecion" lang="en">Product Designer</p>
+                            </div>
+                        </article>
                     </li>
-                    <li>
-                        <img src="./images/img22.jpg" width="270" height="260" alt="" />
-                        <h3 class="name">Ольга Репина</h3>
-                        <p lang="en">Frontend Developer</p>
+
+                    <li class="team-item">
+                        <article class="card">
+                            <div class="team-card-thumb">
+                                <img src="./images/img22.jpg" width="270" height="260" alt="" />
+                            </div>
+                            
+                            <div class="team-card-content">
+                                <h3 class="name">Ольга Репина</h3>
+                                <p class="team-profecion" lang="en">Frontend Developer</p>
+                            </div>
+                        </article>
                     </li>
-                    <li>
-                        <img src="./images/img23.jpg" width="270" height="260" alt="" />
-                        <h3 class="name">Николай Тарасов</h3>
-                        <p lang="en">Marketing</p>
+
+                    <li class="team-item">
+                        <article class="card">
+                            <div class="team-card-thumb">
+                                <img src="./images/img23.jpg" width="270" height="260" alt="" />
+                            </div>
+                            
+                            <div class="team-card-content">
+                                <h3 class="name">Николай Тарасов</h3>
+                                <p class="team-profecion" lang="en">Marketing</p>
+                            </div>
+                        </article>
                     </li>
-                    <li>
-                        <img src="./images/img24.jpg" width="270" height="260" alt="" />
-                        <h3 class="name">Михаил Ермаков</h3>
-                        <p lang="en">UI Designer</p>
+
+                    <li class="team-item">
+                        <article class="card">
+                            <div class="team-card-thumb">
+                                <img src="./images/img24.jpg" width="270" height="260" alt="" />
+                            </div>
+                            
+                            <div class="team-card-content">
+                                <h3 class="name">Михаил Ермаков</h3>
+                                <p class="team-profecion" lang="en">UI Designer</p>
+                            </div>
+                        </article>
                     </li>
                 </ul>
             </div>

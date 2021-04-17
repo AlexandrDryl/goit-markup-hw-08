@@ -6,6 +6,10 @@
 /* черный #000000; */
 
 :root {
+  --card-set-gap: 30px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
   --main-text-color: #757575;
   --title-text-color: #212121;
   --main-bg-color: #ffffff;
@@ -55,6 +59,14 @@ img {
   padding-bottom: 94px;
 }
 
+.main-header {
+  border-bottom: 1px solid #ececec;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+
 /* Логотипы */
 
 .logo-top .logo {
@@ -78,7 +90,20 @@ img {
 
 /* Навигация страницы */
 
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -96,6 +121,15 @@ img {
 }
 
 /* Контакты */
+
+.contacts-top {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-top .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .contacts-top .link {
   color: var(--main-text-color);
@@ -158,6 +192,19 @@ img {
   overflow: hidden;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
 .features .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -185,8 +232,43 @@ img {
   padding-top: 0;
 }
 
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
 .team {
   background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.team-card-content {
+  text-align: center;
+  padding-top: var(--card-set-gap);
+  padding-bottom: var(--card-set-gap);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .name {
@@ -194,6 +276,10 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.team-profecion {
+  margin-top: 10px;
 }
 
 /* Подвал */
@@ -205,10 +291,12 @@ img {
 }
 
 .contacts .map {
+  display: block;
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 .contacts .map:hover,
@@ -217,10 +305,12 @@ img {
 }
 
 .contacts .link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
+  margin-top: 9px;
 }
 
 .contacts .link:hover,
@@ -232,12 +322,29 @@ img {
 
 /* Проекты */
 
+.filter-set {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters:not(:last-child) {
+  margin-right: 8px;
+}
+
 .projects .button {
+  background: #f5f4fa;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  letter-spacing: 0.03em;
+
+  min-height: 38px;
+  padding: 6px 22px;
+  border-width: 0;
+  border-radius: 4px;
 }
 
 .projects .button:hover,
@@ -246,6 +353,28 @@ img {
   background-color: var(--accent-color);
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
 .projects .title {
   color: var(--title-text-color);
   font-size: 18px;
@@ -254,6 +383,8 @@ img {
 }
 
 .projects .text {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.87;
 }
