@@ -434,6 +434,7 @@ img {
 
 .blocks {
   display: flex;
+  align-items: baseline;
 }
 
 .folow {
