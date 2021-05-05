@@ -260,6 +260,7 @@ img {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .features .title {
@@ -670,6 +671,7 @@ img {
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
