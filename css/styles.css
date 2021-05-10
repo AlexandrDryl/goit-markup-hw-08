@@ -17,7 +17,7 @@
   --secondary-bg-color: #2f303a;
   --accent-color: #2196f3;
   --for-link: #afb1b8;
-  --time-gif: 800ms;
+  --time-gif: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
