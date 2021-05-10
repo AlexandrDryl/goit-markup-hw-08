@@ -495,15 +495,11 @@ img {
   margin-left: 70px;
 }
 
-.folow .title,
-.subscribe .title {
+.folow .title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-
   color: var(--main-bg-color);
 }
 
@@ -548,6 +544,14 @@ img {
 }
 .subscribe-form {
   display: flex;
+}
+.subscribe .title {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--main-bg-color);
 }
 .subscribe-input {
   width: 358px;
