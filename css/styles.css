@@ -728,7 +728,8 @@ img {
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
   opacity: 1;
-  transition: opacity var(--time-gif) var(--cubic);
+  transition: opacity var(--time-gif) var(--cubic),
+    visibility var(--time-gif) var(--cubic);
 }
 
 .backdrop.is-hidden {
@@ -753,7 +754,7 @@ img {
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
   transition: transform var(--time-gif) var(--cubic),
-    scale var(--time-gif) var(--cubic);
+    visibility var(--time-gif) var(--cubic);
 }
 
 .button-close {
@@ -769,6 +770,9 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.icon-close {
+  fill: #000000;
   transition: fill var(--time-gif) var(--cubic);
 }
 
