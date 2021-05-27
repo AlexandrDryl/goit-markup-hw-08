@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: var(--main-bg-color);
+
+  border-bottom: 1px solid #ececec;
+}
+
+.header__envelope {
+  display: flex;
+  align-items: center;
+}

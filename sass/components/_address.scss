@@ -1,0 +1,35 @@
+.address__map {
+  display: block;
+  line-height: 1.71;
+  margin-top: 20px;
+
+  text-decoration: none;
+  font-style: normal;
+
+  color: var(--main-bg-color);
+
+  transition: color var(--time-gif) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link {
+  display: block;
+
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color var(--time-gif) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,32 @@
+.check__label {
+  display: flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.check__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  transition: border-color var(--time-gif) var(--cubic),
+    background-color var(--time-gif) var(--cubic);
+
+  .check__input:checked + & {
+    background-color: var(--accent-color);
+    border: 0px solid transparent;
+  }
+}
+
+.check__policy {
+  padding-left: 7px;
+}
+
+.check__policy-link {
+  color: var(--accent-color);
+}
