@@ -8,6 +8,12 @@ body {
   color: var(--main-text-color);
 }
 
+*,
+*::before,
+*::after {
+  outline: 1px solid red;
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +27,7 @@ b {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -43,6 +49,11 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

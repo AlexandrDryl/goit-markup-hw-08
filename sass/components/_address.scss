@@ -1,7 +1,10 @@
+.address {
+  margin-top: 20px;
+}
+
 .address__map {
   display: block;
   line-height: 1.71;
-  margin-top: 20px;
 
   text-decoration: none;
   font-style: normal;
@@ -16,13 +19,16 @@
   }
 }
 
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+
 .address__link {
   display: block;
 
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
-  margin-top: 9px;
 
   color: rgba(255, 255, 255, 0.6);
 
