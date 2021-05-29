@@ -4,23 +4,24 @@
   margin-bottom: 30px;
   cursor: pointer;
   font-size: 12px;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
+}
 
-  .check__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
+.check__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
 
-    border: 2px solid var(--title-text-color);
-    border-radius: 2px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
 
-    transition: border-color var(--time-gif) var(--cubic),
-      background-color var(--time-gif) var(--cubic);
-  }
+  transition: border-color var(--time-gif) var(--cubic),
+    background-color var(--time-gif) var(--cubic);
 
   .check__input:checked + & {
     background-color: var(--accent-color);
