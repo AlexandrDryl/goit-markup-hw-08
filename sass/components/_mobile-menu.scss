@@ -10,13 +10,23 @@
   justify-content: space-between;
   padding: 48px 40px;
   background-color: var(--main-bg-color);
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.7);
 
-  transform: translateY(-100%);
-  transition: transform var(--time-gif) var(--cubic);
+  // transform: translateY(-100%);
+  // transition: transform var(--time-gif) var(--cubic);
+
+  transition: opacity var(--time-gif) var(--cubic),
+    transform var(--time-gif) var(--cubic);
 }
 
 .mobile-menu.is-open {
-  transform: translateY(0);
+  pointer-events: visible;
+  opacity: 1;
+  transform: scale(1);
+  // transform: translateY(0);
 }
 
 .mobile-menu__item:not(:last-child),
