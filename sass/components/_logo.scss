@@ -1,15 +1,29 @@
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 1.19;
+
+  color: var(--accent-color);
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+  }
+
+  &--color {
+    color: var(--title-text-color);
+  }
+}
+
+.footer__logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
 
   color: var(--accent-color);
 
-  &--color-b {
-    color: var(--title-text-color);
-  }
-  &--color-w {
+  &--color {
     color: var(--main-bg-color);
   }
 }

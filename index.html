@@ -15,7 +15,7 @@
 
     <header class="header">
         <div class="container header__envelope">
-            <a href="./index.html" class="logo">Web<span class="logo logo--color-b">Studio</span></a>
+            <a href="./index.html" class="logo">Web<span class="logo logo--color">Studio</span></a>
             <nav class="nav">
                 <ul class="list nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студия</a></li>
@@ -40,14 +40,66 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button class="menu menu__btn" aria-label="Кнопка меню"
+          data-menu-button>
+                <svg class="menu__btn-icon" width="40" height="40">
+                    <use class="menu__icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
+                    <use class="menu__icon-cross" href="./images/svg/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <ul class="list mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link mobile-menu__link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            
+                <ul class="list mobile-menu__contacts-list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mobile-menu__tel">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            
+                <ul class="list mobile-menu__socials-list">
+                    <li class="mobile-menu__social-item">
+                        <a href="http://instagram.com" class="mobile-menu__social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="http://twitter.com" class="mobile-menu__social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="http://facebook.com" class="mobile-menu__social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="http://linkedin.com" class="mobile-menu__social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            
+            </div>
         </div>
     </header>
+
+                
 
     <main>
         
         <section class="section baner">
             <div class="container">
-                <h1 class="baner__title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="baner__title">Эффективные решения
+                    <br> для вашего бизнеса</h1>
                 <button type="button" class="baner__button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -378,7 +430,7 @@
     <footer class="footer">
         <div class="container footer__envelope">
             <div class="footer__box">
-                <a href="./index.html" class="logo">Web<span class="logo--color-w">Studio</span></a>
+                <a href="./index.html" class="footer__logo">Web<span class="footer__logo footer__logo--color">Studio</span></a>
                 <address class="address">
                     <ul class="list address__list">
                         <li class="address__item">
@@ -514,6 +566,7 @@
     
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-meny.js"></script>
     
 </body>
 </html>

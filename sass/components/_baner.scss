@@ -25,12 +25,16 @@
   font-weight: 900;
   max-width: 696px;
   font-style: normal;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--main-bg-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .baner__button {
