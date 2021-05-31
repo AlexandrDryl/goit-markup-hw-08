@@ -42,10 +42,11 @@
 
 .contacts__icon--phone {
   margin-right: 10px;
-
   fill: currentColor;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone {
     width: 10px;
     height: 16px;
   }
@@ -53,10 +54,11 @@
 
 .contacts__icon--mail {
   margin-right: 10px;
-
   fill: currentColor;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
     width: 16px;
     height: 12px;
   }
