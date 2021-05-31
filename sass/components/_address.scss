@@ -21,6 +21,9 @@
 
 .address__item:not(:first-child) {
   margin-top: 9px;
+  @media screen and(max-width: 1199px) {
+    margin-top: 8px;
+  }
 }
 
 .address__link {

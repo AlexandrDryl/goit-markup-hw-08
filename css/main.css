@@ -365,6 +365,7 @@ img {
 }
 
 .mobile-menu__tel {
+  text-decoration: none;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -377,6 +378,7 @@ img {
 }
 
 .mobile-menu__mail {
+  text-decoration: none;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -395,6 +397,7 @@ img {
 }
 
 .mobile-menu__social-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -554,6 +557,12 @@ img {
   color: var(--title-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
 .features__text {
   line-height: 1.71;
 }
@@ -615,11 +624,18 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
@@ -737,14 +753,15 @@ img {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -903,6 +920,12 @@ img {
   margin-top: 9px;
 }
 
+@media screen and (max-width: 1199px) {
+  .address__item:not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
 .address__link {
   display: block;
   text-decoration: none;
@@ -1041,7 +1064,7 @@ img {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-bg-color);
 }
