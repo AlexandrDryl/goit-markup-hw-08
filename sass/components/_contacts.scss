@@ -40,24 +40,24 @@
   }
 }
 
-// .contacts__icon--mail {
-//   margin-right: 10px;
+.contacts__icon--phone {
+  margin-right: 10px;
 
-//   fill: currentColor;
+  fill: currentColor;
 
-//   @media screen and (min-width: 1200px) {
-//     width: 16px;
-//     height: 12px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
 
-// .contacts__icon--phone {
-//   margin-right: 10px;
+.contacts__icon--mail {
+  margin-right: 10px;
 
-//   fill: currentColor;
+  fill: currentColor;
 
-//   @media screen and (min-width: 1200px) {
-//     width: 10px;
-//     height: 16px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
