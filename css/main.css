@@ -257,30 +257,6 @@ img {
   color: var(--accent-color);
 }
 
-.contacts__icon--mail {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts__icon--mail {
-    width: 16px;
-    height: 12px;
-  }
-}
-
-.contacts__icon--phone {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts__icon--phone {
-    width: 10px;
-    height: 16px;
-  }
-}
-
 .menu__btn {
   z-index: 8;
   width: 40px;
